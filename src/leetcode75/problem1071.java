@@ -1,6 +1,13 @@
-class problem1071 {
+package leetcode75;
 
-    public String gcdOfStrings(String str1, String str2) {
+public class problem1071 {
+
+    public static void main (String[] args) {
+        System.out.println(gcdOfStrings("ABCABC","ABC"));
+        System.out.println(gcdOfStrings("ABABABAB","ABABAB"));
+    }
+
+    public static String gcdOfStrings(String str1, String str2) {
         // Original solution is SLOW -> O(n^2*m^2)
 
 		// Instead of iterating and removing prefix
@@ -13,7 +20,7 @@ class problem1071 {
         return str1.substring(0,gcd);
     }
 
-    private int gcd(int lenA, int lenB) {
+    private static int gcd(int lenA, int lenB) {
         // Call gcd until we have exhausted the shortest word
         // Check the remainder of the two words to determine the length of the denominator
         // ABC, ABCABC

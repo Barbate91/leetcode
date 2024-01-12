@@ -1,7 +1,8 @@
 package leetcode75;
 
 public class problem1768 {
-	public String mergeAlternately(String word1, String word2) {
+
+	public static String mergeAlternately(String word1, String word2) {
 		StringBuilder mergedString = new StringBuilder();
 		int boundary = Math.min(word1.length(), word2.length());
 
