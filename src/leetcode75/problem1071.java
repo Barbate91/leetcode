@@ -2,11 +2,6 @@ package leetcode75;
 
 public class problem1071 {
 
-    public static void main (String[] args) {
-        System.out.println(gcdOfStrings("ABCABC","ABC"));
-        System.out.println(gcdOfStrings("ABABABAB","ABABAB"));
-    }
-
     public static String gcdOfStrings(String str1, String str2) {
         // Original solution is SLOW -> O(n^2*m^2)
 
