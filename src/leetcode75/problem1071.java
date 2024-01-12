@@ -1,17 +1,24 @@
 class problem1071 {
 
     public String gcdOfStrings(String str1, String str2) {
-        //LOGIC IS MISSING FOR STR2 TO ALSO DIVIDE BY ITSELF
-        String strToParse = str1;
+        // SOLUTION IS SLOW
         for (int i=0; i < str2.length(); i++) {
             String prefix = str2.substring(i);
 
-            while (strToParse.startsWith(prefix)) {
-                strToParse = strToParse.substring(prefix.length(),strToParse.length());
+            String str1AfterProcessing = removePrefixFromStr(str1,prefix);
+            if (str1AfterProcessing == "") {
+                String str2AfterProcessing = removePrefixFromStr(str2,prefix);
+                if (str2AfterProcessing == "")
+                    return prefix;
             }
-            if (strToParse == "")
-                return prefix;
         }
         return "";
+    }
+
+    private String removePrefixFromStr(String str, String prefix) {
+        while (str.startsWith(prefix)) {
+            str = str.substring(prefix.length(),str.length());
+        }
+        return str;
     }
 }
