@@ -1,6 +1,6 @@
 package leetcode75.tests;
 
-import leetcode75.problem1768;
+import leetcode75.problem1431;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
