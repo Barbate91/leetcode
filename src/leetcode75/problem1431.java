@@ -1,5 +1,10 @@
+package leetcode75;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class problem1431 {
-    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+    public static List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         // O(2N) -> O(N)
         // Attempts: 1
 

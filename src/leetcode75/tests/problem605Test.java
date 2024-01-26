@@ -9,7 +9,7 @@ public class problem605Test {
 
     @Test
     public void canPlaceFlowers() {
-        assertTrue(problem605.canPlaceFlowers([1,0,0,0,1],1) == true);
-        assertTrue(problem605.canPlaceFlowers([1,0,0,0,1],2) == false);
+        assertTrue(problem605.canPlaceFlowers(new int[]{1, 0, 0, 0, 1}, 1));
+        assertFalse(problem605.canPlaceFlowers(new int[]{1,0,0,0,1},2));
     }
 }

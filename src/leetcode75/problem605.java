@@ -1,5 +1,7 @@
+package leetcode75;
+
 public class problem605 {
-    public boolean canPlaceFlowers(int[] flowerbed, int n) {
+    public static boolean canPlaceFlowers(int[] flowerbed, int n) {
         // O(N)
         // Attempts: 4
         int flowersLeftToPlant = n;
@@ -17,6 +19,6 @@ public class problem605 {
                 break;
         }
 
-        return (flowersLeftToPlant <= 0) ? true : false;
+        return flowersLeftToPlant <= 0;
     }
 }
