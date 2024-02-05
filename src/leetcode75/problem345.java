@@ -1,5 +1,7 @@
 package leetcode75;
 
+import java.util.LinkedHashMap;
+
 public class problem345 {
     public static String reverseVowels(String s) {
         // If character is a vowel save the vowel and position
