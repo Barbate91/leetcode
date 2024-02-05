@@ -1,4 +1,3 @@
-package leetcode75;
 
 public class problem605 {
     public static boolean canPlaceFlowers(int[] flowerbed, int n) {
